@@ -1,6 +1,6 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/data/dna.txt";
+$dnaurl = "https://trashrobot.net/MUTUAL-AID/data/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -13,7 +13,7 @@ $dna = json_decode($dnaraw);
 mkdir("data");
 mkdir("php");
 
-copy("https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/php/replicator.txt","replicator.php");
+copy("https://trashrobot.net/MUTUAL-AID/php/replicator.txt","replicator.php");
 
 
 foreach($dna->html as $value){

@@ -1,20 +1,16 @@
 <?php
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/data/dna.txt";
-
-if(isset($_GET["dna"])){
-    $dnaurl = $_GET["dna"];
-}
-
-$baseurl = explode("data/",$dnaurl)[0];
-$dnaraw = file_get_contents($dnaurl);
+$dnaraw = file_get_contents("../data/dna.txt");
 $dna = json_decode($dnaraw);
+$baseurl = "../";
 
 mkdir("data");
 mkdir("php");
+mkdir("freestore");
+mkdir("tracks");
+mkdir("documents");
 
-copy("https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/php/replicator.txt","replicator.php");
-
+copy("../php/local-replicator.txt","replicator.php");
 
 foreach($dna->html as $value){
     
@@ -29,12 +25,15 @@ foreach($dna->data as $value){
     
 }
 
+
 foreach($dna->php as $value){
  
     copy($baseurl."php/".$value,"php/".$value);
     copy($baseurl."php/".$value,explode(".",$value)[0].".php");
 
 }
+    
+
 
 ?>
 <a href = "index.html">CLICK ME(3/3)</a>
