@@ -1,3 +1,17 @@
+### [index.html](index.html)
+
+![](qrcode.png)
+![](screenshot.png)
+
+# [MUTUAL AID TRASH MAGIC APP](https://github.com/LafeLabs/MUTUAL-AID)
+
+# [LINK TO THE REPLICATOR](https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/php/replicator.txt)
+
+replicator:
+```
+https://raw.githubusercontent.com/LafeLabs/MUTUAL-AID/refs/heads/main/php/replicator.txt
+```
+
 # [REPLICATE TRASH MAGIC SERVER!](https://github.com/LafeLabs/REPLICATE-TRASH-MAGIC-SERVER)
 
 ### [index.html](index.html)
