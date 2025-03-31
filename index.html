@@ -33,11 +33,12 @@ body{
     width:100%;
     text-align:center;
 }
-#qrcode{
-    position:absolute;
-    z-index:-1;
-    left:5px;
-    top:5px;
+#qrcode img{
+    margin:auto;
+    display:block;
+    border:solid;
+    border-color:white;
+    border-width:10px;
 }
 .BOX{
     display:block;
@@ -100,9 +101,9 @@ body{
 }
 </style>
 <body>    
-<div id = "qrcode"></div>
 <H1 ID = "TITLE">DIRT WIZARD</H1>
 <DIV ID = "FRIENDS">
+    <div id = "qrcode"></div>
     <a href = "../create.html">CREATE NEW PAGE!</a>
 
 </DIV>
