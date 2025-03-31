@@ -6,9 +6,6 @@ $baseurl = "../";
 
 mkdir("data");
 mkdir("php");
-mkdir("freestore");
-mkdir("tracks");
-mkdir("documents");
 
 copy("../php/local-replicator.txt","replicator.php");
 

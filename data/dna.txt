@@ -2,10 +2,8 @@
     "html": [
         "README.md",
         "create.html",
-        "documents.html",
         "edit.html",
         "fork.html",
-        "geometron.js",
         "inbox.txt",
         "index.html",
         "outbox.txt",
